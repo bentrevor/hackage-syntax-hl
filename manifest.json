@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "hackage-syntax-hl",
+  "description": "add syntax highlighting to hackage.haskell.org src pages",
+  "version": "1.0",
+
+  "content_scripts": [{
+    "matches": ["*://hackage.haskell.org/*src*"],
+    "js": ["highlight/highlight.pack.js"],
+    "css": ["highlight/styles/github.css"]
+  }]
+}
