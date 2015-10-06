@@ -6,7 +6,7 @@
 
   "content_scripts": [{
     "matches": ["*://hackage.haskell.org/*src*"],
-    "js": ["highlight/highlight.pack.js"],
+    "js": ["highlight/highlight.pack.js", "hackage-syntax-hl.js"],
     "css": ["highlight/styles/github.css"]
   }]
 }
